@@ -1,3 +1,2 @@
-require("settings")
-require("maps")
+require("kslotes")
 
