@@ -41,4 +41,6 @@ lsp.on_attach(function(client, bufnr)
     --vim.keymap.set("n", "<C-a>", function() vim.lsp.buf.signature_help() end, opts)
 end)
 
+require('lspconfig').jdtls.setup({});
+
 lsp.setup()
