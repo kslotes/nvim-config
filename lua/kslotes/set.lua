@@ -28,3 +28,6 @@ vim.opt.updatetime = 50
 vim.opt.colorcolumn = "80"
 
 vim.g.leader = " "
+
+vim.opt.termguicolors = true
+vim.cmd.colorscheme 'moonfly'

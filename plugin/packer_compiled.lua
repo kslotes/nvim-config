@@ -79,11 +79,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\Usuario\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
-  catppuccin = {
-    loaded = true,
-    path = "C:\\Users\\Usuario\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\catppuccin",
-    url = "https://github.com/catppuccin/nvim"
-  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "C:\\Users\\Usuario\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-nvim-lsp",
@@ -108,6 +103,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Usuario\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
+  },
+  moonfly = {
+    loaded = true,
+    path = "C:\\Users\\Usuario\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\moonfly",
+    url = "https://github.com/bluz71/vim-moonfly-colors"
   },
   ["nvim-cmp"] = {
     loaded = true,
@@ -143,11 +143,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Usuario\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\ripgrep",
     url = "https://github.com/BurntSushi/ripgrep"
-  },
-  ["rose-pine"] = {
-    loaded = true,
-    path = "C:\\Users\\Usuario\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\rose-pine",
-    url = "https://github.com/rose-pine/neovim"
   },
   ["telescope.nvim"] = {
     loaded = true,
