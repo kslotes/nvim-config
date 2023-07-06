@@ -30,4 +30,6 @@ vim.opt.colorcolumn = "80"
 vim.g.leader = " "
 
 vim.opt.termguicolors = true
-vim.cmd.colorscheme 'moonfly'
+
+vim.g.colorscheme = 'onedark'
+

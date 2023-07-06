@@ -29,7 +29,6 @@ lsp.setup_nvim_cmp({
 })
 
 lsp.on_attach(function(client, bufnr)
-        print("help")
     local opts = {buffer = bufnr, remap = false}
 
     vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, opts)
@@ -44,6 +43,7 @@ lsp.on_attach(function(client, bufnr)
     --vim.keymap.set("n", "<C-a>", function() vim.lsp.buf.signature_help() end, opts)
 end)
 
-require('lspconfig').jdtls.setup({});
+require('jdtls').setup_dap({ hotcodereplace = 'auto' })
+
 
 lsp.setup()
