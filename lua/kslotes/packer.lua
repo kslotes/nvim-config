@@ -23,9 +23,6 @@ return require('packer').startup(function(use)
           {'neovim/nvim-lspconfig'},             -- Required
           {                                      -- Optional
               'williamboman/mason.nvim',
-              run = function()
-                  pcall(vim.cmd, 'MasonUpdate')
-              end,
           },
           {'williamboman/mason-lspconfig.nvim'}, -- Optional
 
@@ -35,6 +32,4 @@ return require('packer').startup(function(use)
           {'L3MON4D3/LuaSnip'},     -- Required
       }
     }
-    use 'mfussenegger/nvim-jdtls'
-    use 'mfussenegger/nvim-dap'
 end)
