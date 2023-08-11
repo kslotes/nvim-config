@@ -17,15 +17,13 @@ return require('packer').startup(function(use)
   use('tpope/vim-fugitive')
   use {
       'VonHeikemen/lsp-zero.nvim',
+      
       branch = 'v2.x',
       requires = {
           -- LSP Support
           {'neovim/nvim-lspconfig'},             -- Required
-          {                                      -- Optional
-              'williamboman/mason.nvim',
-          },
+          {'williamboman/mason.nvim'},
           {'williamboman/mason-lspconfig.nvim'}, -- Optional
-
           -- Autocompletion
           {'hrsh7th/nvim-cmp'},     -- Required
           {'hrsh7th/cmp-nvim-lsp'}, -- Required

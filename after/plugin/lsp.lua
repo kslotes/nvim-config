@@ -44,4 +44,6 @@ lsp.setup_nvim_cmp({
 })
 
 
-cmp.setup({});
+cmp.setup({
+    mapping = cmp_mappings
+});
