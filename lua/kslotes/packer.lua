@@ -17,7 +17,6 @@ return require('packer').startup(function(use)
   use('tpope/vim-fugitive')
   use {
       'VonHeikemen/lsp-zero.nvim',
-      
       branch = 'v2.x',
       requires = {
           -- LSP Support
@@ -30,4 +29,6 @@ return require('packer').startup(function(use)
           {'L3MON4D3/LuaSnip'},     -- Required
       }
     }
+    use ('nvim-treesitter/nvim-treesitter-context')
+
 end)
