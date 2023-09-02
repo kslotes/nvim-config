@@ -159,6 +159,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\User\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\undotree",
     url = "https://github.com/mbbill/undotree"
   },
+  ["vim-astro"] = {
+    loaded = true,
+    path = "C:\\Users\\User\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-astro",
+    url = "https://github.com/wuelnerdotexe/vim-astro"
+  },
   ["vim-fugitive"] = {
     loaded = true,
     path = "C:\\Users\\User\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-fugitive",

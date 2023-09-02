@@ -30,5 +30,6 @@ return require('packer').startup(function(use)
       }
     }
     use ('nvim-treesitter/nvim-treesitter-context')
+    use('wuelnerdotexe/vim-astro')
 
 end)
