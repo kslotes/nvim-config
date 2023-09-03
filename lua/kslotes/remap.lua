@@ -25,3 +25,4 @@ vim.keymap.set("i", "<C-c>", "<Esc>")
 
 vim.keymap.set("n", "<leader>m", "<cmd>lnext<CR>zz")
 vim.keymap.set("n", "<leader>n", "<cmd>lprev<CR>zz")
+

@@ -8,16 +8,6 @@ end)
 
 
 require("telescope").setup {
-    defaults = {
-        path_display = {"truncate"},
-    },
-
-    pickers = {
-        find_files = {
-            hidden = false,
---            file_ignore_patterns = { '.git' },
-        }
-    },
 }
 
 
