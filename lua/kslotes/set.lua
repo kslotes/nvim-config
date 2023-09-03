@@ -33,4 +33,3 @@ vim.opt.termguicolors = true
 
 vim.g.colorscheme = 'onedark'
 
-vim.g.astro_typescript = 'enable';
