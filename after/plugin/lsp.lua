@@ -6,6 +6,8 @@ lspconfig.pyright.setup {}
 lspconfig.tsserver.setup {}
 lspconfig.tailwindcss.setup {}
 lspconfig.cssls.setup {}
+lspconfig.angularls.setup {}
+lspconfig.sqlls.setup {}
 lspconfig.lua_ls.setup {}
 lspconfig.rust_analyzer.setup {
     -- Server-specific settings. See `:help lspconfig-setup`
@@ -37,7 +39,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
         vim.keymap.set('n', 'gd', vim.lsp.buf.definition, opts)
         vim.keymap.set('n', 'K', vim.lsp.buf.hover, opts)
         vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, opts)
-        vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, opts)
+        --vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, opts)
         vim.keymap.set('n', '<space>oa', vim.lsp.buf.add_workspace_folder, opts)
         vim.keymap.set('n', '<space>or', vim.lsp.buf.remove_workspace_folder, opts)
         vim.keymap.set('n', '<space>ol', function()
