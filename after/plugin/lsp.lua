@@ -1,20 +1,4 @@
 require("mason").setup()
-require("mason-lspconfig").setup()
--- Setup language servers.
-local lspconfig = require('lspconfig')
-lspconfig.pyright.setup {}
-lspconfig.tailwindcss.setup {}
-lspconfig.cssls.setup {}
-lspconfig.angularls.setup {}
-lspconfig.sqlls.setup {}
-lspconfig.lua_ls.setup {}
-lspconfig.rust_analyzer.setup {
-    -- Server-specific settings. See `:help lspconfig-setup`
-    settings = {
-        ['rust-analyzer'] = {},
-    },
-}
-
 
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
