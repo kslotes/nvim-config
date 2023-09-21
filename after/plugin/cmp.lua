@@ -59,6 +59,7 @@ local cmp = require'cmp'
   -- Set up lspconfig.
   local capabilities = require('cmp_nvim_lsp').default_capabilities()
   require('lspconfig')['tsserver'].setup {
+    cmd = { vim.fn.stdpath("data") .. "/mason/bin/typescript-language-server", "--stdio" },
     capabilities = capabilities
   }
   require('lspconfig')['angularls'].setup {
