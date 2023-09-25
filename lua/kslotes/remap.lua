@@ -26,22 +26,3 @@ vim.keymap.set("i", "<C-c>", "<Esc>")
 vim.keymap.set("n", "<leader>m", "<cmd>lnext<CR>zz")
 vim.keymap.set("n", "<leader>n", "<cmd>lprev<CR>zz")
 
-local function balls()
-    local method = "textDocument/completion"
-    local params = vim.lsp.util.make_position_params()
-    local client = nil
-
-    for _, c in ipairs(vim.lsp.get_active_clients()) do
-        if c.name == "tsserver" then
-            client = c
-            break
-        end
-    end
-
-    client.request(method, params, function(err, results)
-        vim.print("error", err)
-        vim.print("results", results)
-    end, 0)
-end
-
-vim.keymap.set("i", "<leader>bb", balls)
