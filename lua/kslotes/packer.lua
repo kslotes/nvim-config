@@ -4,7 +4,6 @@ return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
-  use('nvim-treesitter/playground')
   use('BurntSushi/ripgrep')
   use {
       'nvim-telescope/telescope.nvim', tag = '0.1.1',
@@ -18,7 +17,6 @@ return require('packer').startup(function(use)
   use('ThePrimeagen/harpoon')
   use('mbbill/undotree')
   use('tpope/vim-fugitive')
-  use ('nvim-treesitter/nvim-treesitter-context')
 
   use {
       "williamboman/mason.nvim",
@@ -33,6 +31,7 @@ return require('packer').startup(function(use)
   use('hrsh7th/nvim-cmp')
   use('L3MON4D3/LuaSnip')
   use('saadparwaiz1/cmp_luasnip')
+--  use('github/copilot.vim')
 
 
 end)
