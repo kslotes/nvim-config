@@ -20,9 +20,15 @@ vim.keymap.set("x", "<leader>p", "\"_dP")
 vim.keymap.set("n", "<leader>y", "\"+y")
 vim.keymap.set("v", "<leader>y", "\"+y")
 vim.keymap.set("n", "<leader>Y", "\"+Y")
-
 vim.keymap.set("i", "<C-c>", "<Esc>")
 
 vim.keymap.set("n", "<leader>m", "<cmd>lnext<CR>zz")
 vim.keymap.set("n", "<leader>n", "<cmd>lprev<CR>zz")
 
+--vim.keymap.set("n", "y", "\"+y")
+--vim.keymap.set("v", "y", "\"+y")
+--vim.keymap.set("n", "p", "\"+p")
+--vim.keymap.set("v", "p", "\"+p")
+--
+vim.keymap.set("n", "gh", ":diffget //2<CR>")
+vim.keymap.set("n", "gl", ":diffget //3<CR>")
