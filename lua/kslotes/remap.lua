@@ -1,3 +1,4 @@
+local vim;
 
 vim.g.mapleader = " "
 
@@ -30,5 +31,5 @@ vim.keymap.set("n", "<leader>n", "<cmd>lprev<CR>zz")
 --vim.keymap.set("n", "p", "\"+p")
 --vim.keymap.set("v", "p", "\"+p")
 --
-vim.keymap.set("n", "gh", ":diffget //2<CR>")
-vim.keymap.set("n", "gl", ":diffget //3<CR>")
+vim.keymap.set("n", "gh", "<cmd>diffget //2<CR>")
+vim.keymap.set("n", "gl", "<cmd>diffget //3<CR>")
