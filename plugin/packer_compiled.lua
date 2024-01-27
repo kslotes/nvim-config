@@ -104,6 +104,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\User\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["fidget.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\User\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\fidget.nvim",
+    url = "https://github.com/j-hui/fidget.nvim"
+  },
   harpoon = {
     loaded = true,
     path = "C:\\Users\\User\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\harpoon",

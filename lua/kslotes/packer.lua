@@ -7,7 +7,6 @@ return require('packer').startup(function(use)
   use('BurntSushi/ripgrep')
   use {
       'nvim-telescope/telescope.nvim', tag = '0.1.1',
-      -- or                            , branch = '0.1.x',
       requires = {
           "nvim-lua/plenary.nvim",
           { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
@@ -19,9 +18,9 @@ return require('packer').startup(function(use)
   use('tpope/vim-fugitive')
 
   use {
+      "neovim/nvim-lspconfig",
       "williamboman/mason.nvim",
       "williamboman/mason-lspconfig.nvim",
-      "neovim/nvim-lspconfig",
   }
 
   use('hrsh7th/cmp-nvim-lsp')
@@ -32,6 +31,6 @@ return require('packer').startup(function(use)
   use('L3MON4D3/LuaSnip')
   use('saadparwaiz1/cmp_luasnip')
 --  use('github/copilot.vim')
-
+  use{'j-hui/fidget.nvim', tag = 'v1.0.0'}
 
 end)
