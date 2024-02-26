@@ -13,7 +13,14 @@ local handlers = {
                 }
             }
         }
-    end
+    end,
+
+    ["tailwindcss"] = function ()
+        local lspconfig = require("lspconfig")
+        lspconfig.tailwindcss.setup{
+            filetypes = { "templ" },
+        }
+    end,
 }
 
 
@@ -54,6 +61,17 @@ cmp.setup.cmdline({ '/', '?' }, {
     sources = {
         { name = 'buffer' }
     }
+})
+
+cmp.setup.filetype('templ', {
+    sources = cmp.config.sources({
+        { name = 'tailwindcss' },
+        { name = 'nvim_lsp' },
+        { name = 'luasnip' },
+        { name = 'nvim_lsp:tailwindcss' },
+    }, {
+        { name = 'buffer' },
+    }),
 })
 
 cmp.setup.cmdline(':', {
