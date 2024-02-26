@@ -25,6 +25,7 @@ vim.keymap.set("n", "<leader>m", "<cmd>lnext<CR>zz")
 vim.keymap.set("n", "<leader>n", "<cmd>lprev<CR>zz")
 
 vim.keymap.set("n", "<leader>n", "<cmd>lprev<CR>zz")
+vim.keymap.set("n", "gh", "<cmd>diffget //2<CR>")
 vim.keymap.set("n", "gl", "<cmd>diffget //3<CR>")
 
 vim.keymap.set("n", "<leader>n", "<cmd>lprev<CR>zz")
