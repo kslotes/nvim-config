@@ -15,8 +15,3 @@ require'nvim-treesitter.configs'.setup {
   },
 }
 
-vim.filetype.add({
-    extension = {
-        templ = "templ",
-    },
-})

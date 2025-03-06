@@ -14,13 +14,6 @@ local handlers = {
             }
         }
     end,
-
-    ["tailwindcss"] = function ()
-        local lspconfig = require("lspconfig")
-        lspconfig.tailwindcss.setup{
-            filetypes = { "templ" },
-        }
-    end,
 }
 
 
