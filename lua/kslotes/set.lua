@@ -33,4 +33,12 @@ vim.opt.termguicolors = true
 
 vim.g.colorscheme = 'onedark'
 
-
+vim.diagnostic.config({
+    virtual_text = true,  -- Muestra los errores en la línea
+    signs = true,         -- Habilita los íconos en el lateral
+    update_in_insert = false,
+    severity_sort = true,
+    float = {
+        source = "always", -- Muestra de dónde viene el error
+    },
+})

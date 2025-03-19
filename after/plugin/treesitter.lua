@@ -13,5 +13,8 @@ require'nvim-treesitter.configs'.setup {
 
     additional_vim_regex_highlighting = false,
   },
+  indent = {
+      enable = true, -- Habilita el indentado automático con Treesitter
+  },
 }
 

@@ -74,11 +74,6 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  LuaSnip = {
-    loaded = true,
-    path = "C:\\Users\\nitsu\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\LuaSnip",
-    url = "https://github.com/L3MON4D3/LuaSnip"
-  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "C:\\Users\\nitsu\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-buffer",
@@ -99,10 +94,10 @@ _G.packer_plugins = {
     path = "C:\\Users\\nitsu\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-path",
     url = "https://github.com/hrsh7th/cmp-path"
   },
-  cmp_luasnip = {
+  ["cmp-vsnip"] = {
     loaded = true,
-    path = "C:\\Users\\nitsu\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp_luasnip",
-    url = "https://github.com/saadparwaiz1/cmp_luasnip"
+    path = "C:\\Users\\nitsu\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-vsnip",
+    url = "https://github.com/hrsh7th/cmp-vsnip"
   },
   ["copilot.vim"] = {
     loaded = true,
@@ -183,6 +178,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\nitsu\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["vim-vsnip"] = {
+    loaded = true,
+    path = "C:\\Users\\nitsu\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-vsnip",
+    url = "https://github.com/hrsh7th/vim-vsnip"
   }
 }
 
